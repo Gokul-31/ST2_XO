@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backMain2">#2E7D32</color>
+    <color name="turnsBack">#c0392b</color>
+    <color name="gameBack">#00695C</color>
+    <color name="black">#000000</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="playerX">#F44336</color>
+    <color name="playerO">#1A7BC8</color>
+    <color name="result">#ACA715</color>
+    <color name="resultBack">#191818</color>
+    </resources>
