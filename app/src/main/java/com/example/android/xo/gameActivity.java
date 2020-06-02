@@ -11,7 +11,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -52,7 +51,6 @@ public class gameActivity extends AppCompatActivity {
     private int pTurn;
     private int doneTotal=0;
     private Symbol[][] boxes = new Symbol[3][3];
-    private Vibrator vib;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +70,6 @@ public class gameActivity extends AppCompatActivity {
     }
 
     private void setValues() {
-
-        vib=(Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
         picsBack[0] = getDrawable(R.drawable.x_back);
         picsBack[1] = getDrawable(R.drawable.o_back);
