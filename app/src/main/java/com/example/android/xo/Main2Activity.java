@@ -15,7 +15,7 @@ public class Main2Activity extends AppCompatActivity {
     private EditText name1ET;
     private EditText name2ET;
     private Button doneBtn;
-    private Intent homeScreen;
+    private Intent Players2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class Main2Activity extends AppCompatActivity {
 
         initiateViews();
 
-        homeScreen = new Intent(Main2Activity.this,gameActivity.class);
+        Players2 = new Intent(Main2Activity.this,gameActivity.class);
 
         doneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,17 +32,17 @@ public class Main2Activity extends AppCompatActivity {
                 name1=name1ET.getText().toString();
                 name2=name2ET.getText().toString();
 
-                homeScreen.putExtra("name1",name1);
-                homeScreen.putExtra("name2",name2);
+                Players2.putExtra("name1",name1);
+                Players2.putExtra("name2",name2);
 
-                startActivity(homeScreen);
+                startActivity(Players2);
             }
         });
     }
 
     private void initiateViews() {
-        name1ET=findViewById(R.id.name1);
+        name1ET=findViewById(R.id.name11);
         name2ET=findViewById(R.id.name2);
-        doneBtn=findViewById(R.id.done);
+        doneBtn=findViewById(R.id.done1);
     }
 }

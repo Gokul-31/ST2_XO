@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeScreen = new Intent(getApplicationContext(),Main2Activity.class);
+                Intent homeScreen = new Intent(getApplicationContext(),Main12Activity.class);
                 startActivity(homeScreen);
                 overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                 finish();

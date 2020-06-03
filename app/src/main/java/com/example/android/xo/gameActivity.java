@@ -21,6 +21,7 @@ import android.widget.TextView;
 public class gameActivity extends AppCompatActivity {
 
     //playing
+    private int players;
     private String[] names = new String[2];
     private int winner=-1;
     //views

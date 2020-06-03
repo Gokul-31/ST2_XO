@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class result extends AppCompatActivity {
@@ -47,5 +48,16 @@ public class result extends AppCompatActivity {
                 oMedia.start();
                 break;
         }
+    }
+
+    public void goLeader(View view) {
+        Intent goLeaderIntent=new Intent(getApplicationContext(),Leader.class);
+        goLeaderIntent.putExtra("Name",name);
+        startActivity(goLeaderIntent);
+    }
+
+    public void reset(View view) {
+        Intent reset=new Intent(getApplicationContext(),Main12Activity.class);
+        startActivity(reset);
     }
 }

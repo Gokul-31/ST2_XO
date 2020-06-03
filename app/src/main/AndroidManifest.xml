@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.xo">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".result"></activity>
+        <activity android:name=".Leader"></activity>
+        <activity android:name=".game2Activity" />
+        <activity android:name=".Main1Activity" />
+        <activity android:name=".Main12Activity" />
+        <activity android:name=".result" />
         <activity android:name=".gameActivity" />
         <activity android:name=".Main2Activity" />
         <activity
